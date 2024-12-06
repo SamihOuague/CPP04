@@ -1,10 +1,7 @@
 CC=g++
 CPPFLAGS=-g -I./includes -Wall -Werror -Wextra -std=c++98 
-NAME=zombie
-SRC=main.cpp \
-    Zombie.cpp \
-    newZombie.cpp \
-    randomChump.cpp
+NAME=sed
+SRC=main.cpp
 OBJ=$(SRC:.cpp=.o)
 
 $(NAME): $(OBJ)

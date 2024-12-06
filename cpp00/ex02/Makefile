@@ -6,7 +6,7 @@ SRC=tests.cpp \
 OBJ=$(SRC:.cpp=.o)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 all: $(NAME)
 

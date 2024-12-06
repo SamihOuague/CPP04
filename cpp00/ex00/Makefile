@@ -1,12 +1,12 @@
 CC=g++
-CFLAGS=-Wall -Werror -Wextra -std=c++98
+CPPFLAGS=-Wall -Werror -Wextra -std=c++98
 NAME=megaphone
 SRC=megaphone.cpp
 OBJ=$(SRC:.cpp=.o)
 
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 all: $(NAME)
 

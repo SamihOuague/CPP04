@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.hpp                                         :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: souaguen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: souaguen <souaguen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/22 23:37:50 by souaguen          #+#    #+#             */
-/*   Updated: 2024/12/02 01:15:11 by souaguen         ###   ########.fr       */
+/*   Created: 2024/12/06 05:08:25 by  souaguen         #+#    #+#             */
+/*   Updated: 2024/12/06 06:13:09 by souaguen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string>
-#ifndef WEAPON_H
-# define WEAPON_H
+#ifndef	HARL_H
+# define HARL_H
+# define DEBUG "DEBUG"
+# define INFO "INFO"
+# define WARNING "WARNING"
+# define ERROR "ERROR"
 
-class Weapon {
+class Harl {
 	private:
-		std::string	_type;
-
+		void	debug(void);
+		void	info(void);
+		void	warning(void);
+		void	error(void);
 	public:
-		Weapon(std::string type);
-		Weapon(void);
-		std::string	getType(void) const;
-		void		setType(std::string type);
+		void	complain(std::string level);
 };
 #endif

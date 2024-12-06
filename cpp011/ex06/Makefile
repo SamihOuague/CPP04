@@ -1,10 +1,8 @@
 CC=g++
-CPPFLAGS=-g -I./includes -Wall -Werror -Wextra -std=c++98 
-NAME=zombie
+CPPFLAGS=-g -I./includes -std=c++98 -Wall -Wextra -Werror
+NAME=harlFilter
 SRC=main.cpp \
-    Zombie.cpp \
-    newZombie.cpp \
-    randomChump.cpp
+    Harl.cpp
 OBJ=$(SRC:.cpp=.o)
 
 $(NAME): $(OBJ)

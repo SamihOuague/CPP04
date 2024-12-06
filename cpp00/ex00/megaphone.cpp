@@ -6,7 +6,7 @@
 /*   By: souaguen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 18:33:44 by souaguen          #+#    #+#             */
-/*   Updated: 2024/11/22 04:25:22 by souaguen         ###   ########.fr       */
+/*   Updated: 2024/12/06 07:22:24 by souaguen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,11 @@ void	ft_upper_str(std::string msg)
 
 int	main(int argc, char **argv)
 {
-	int	i;
-
 	if (argc == 1)
 	{
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
 		return (0);
 	}
-	i = 0;
 	for (int i = 1; i < argc; i++)
 		ft_upper_str(argv[i]);
 	std::cout << std::endl;
